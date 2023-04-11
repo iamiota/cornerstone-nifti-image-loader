@@ -7,9 +7,9 @@ const prodConfig = {
     filename: '[name].min.js'
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   sourceMap: true
+    // })
   ]
 };
 

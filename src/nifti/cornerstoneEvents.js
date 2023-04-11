@@ -12,7 +12,7 @@ function triggerCornerstoneEvent (eventName, data = {}) {
   };
   const customEvent = new CustomEvent(eventName, eventData);
 
-  external.cornerstone.events.dispatchEvent(customEvent);
+  // external.cornerstone.events.dispatchEvent(customEvent);
 }
 
 export default {

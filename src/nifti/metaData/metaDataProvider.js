@@ -45,7 +45,8 @@ export function metaDataProvider (type, imageId) {
       sliceThickness: metaData.slicePixelSpacing,
       // sliceLocation,
       columnPixelSpacing: metaData.columnPixelSpacing,
-      rowPixelSpacing: metaData.rowPixelSpacing
+      rowPixelSpacing: metaData.rowPixelSpacing,
+      pixelSpacing: [metaData.rowPixelSpacing, metaData.columnPixelSpacing]
     };
   }
 
@@ -91,6 +92,11 @@ export function metaDataProvider (type, imageId) {
       frameIncrementPointer: undefined,
       stereoPairsPresent: 'NO'
     };
+
+  case 'generalSeriesModule':
+    return {
+      modality: 'Unknown',
+    }
 
   default:
     return;
