@@ -46,7 +46,7 @@ export function metaDataProvider (type, imageId) {
       // sliceLocation,
       columnPixelSpacing: metaData.columnPixelSpacing,
       rowPixelSpacing: metaData.rowPixelSpacing,
-      pixelSpacing: [metaData.rowPixelSpacing, metaData.columnPixelSpacing]
+      pixelSpacing: [metaData.columnPixelSpacing, metaData.rowPixelSpacing]
     };
   }
 
