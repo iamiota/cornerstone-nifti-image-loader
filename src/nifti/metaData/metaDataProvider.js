@@ -98,6 +98,9 @@ export function metaDataProvider (type, imageId) {
       modality: 'Unknown',
     }
 
+  case 'header':
+    return metaData.header
+
   default:
     return;
   }
